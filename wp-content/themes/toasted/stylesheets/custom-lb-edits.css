@@ -1,0 +1,750 @@
+/* Main Layout Changes */
+.archive {overflow-x:hidden;}
+
+/* Edit Comment/Activity Popup */
+.editable-container.ui-widget {box-shadow:none;border:1px dashed #ccc;}
+.editable-container textarea {border:0px;}
+.editable-container label {padding-left:10px;padding-top:10px;}
+.acomment-reply-edit {font-size:12px;font-weight:400;color:#71B8C4;padding-left:5px;}
+
+/* Quotes for BB Blockquotes */
+.bbp-reply-content blockquote {background: gray;padding: 5px 10px;border-radius: 10px;color: white;}
+
+/* BP Activity Delete Button Font Family */
+#activity-stream .button {font-family:'Open Sans';}
+
+/* Community Blog */
+.dt-archive-thumb-small {width:100%;background:black;height:200px;position:relative;}
+.dt-featured .dt-archive-thumb-small {min-height:140px;height:auto;}
+
+/* rtMedia */
+#rtmedia-playlist-view {margin-bottom:30px;}
+.media-type-music audio {float:left;clear:both;}
+#rtmedia-media-nav-groups-li a span {display:none;}
+
+/* Activity Stream Post */
+#whats-new {clear:both !important;}
+
+/* Updates to Homepage Slider */
+#dt-home-slider .home-date {font-weight:600;font-size:18px;color:white;}
+#dt-home-slider .show-title {font-size:44px;line-height:44px;font-family:Risque;-webkit-font-feature-settings:"liga" 1, "dlig" 1;font-feature-settings:"liga" 1, "dlig" 1;font-weight:100;}
+#dt-home-slider .show-title a {font-weight:100;}
+.main.dt-home h1 {color:white;text-transform:none;}
+#dt-home-slider p {margin:0px;font-size:18px;line-height:22px;font-weight:400;margin-bottom:20px;}
+#dt-home-slider a {text-decoration:none;}
+#dt-home-slider .dt-slide-info:hover h1 {color:#f70;}
+
+/* Single Shows Comments */
+.show-simple-comments .activity-comments > ul {padding-left:0px;padding-top:0px;}
+.show-simple-comments #activity-stream > li .activity-avatar, .single-dt_shows #activity-stream > li .activity-header, .single-dt_shows #activity-stream > li .activity-inner {display:none;}
+.show-simple-comments #activity-stream > li .activity-content {padding-left:0px;}
+.show-simple-comments #activity-stream > li {padding-top:10px;}
+.show-simple-comments #activity-stream > li .activity-meta a {font-size:15px;color:black;}
+.show-simple-comments #activity-stream .activity-comments > .ac-form {padding-left:0px !important;}
+
+/* Single Posts Page Comments */
+.activity-permalink .activity-comments > ul {padding-left:0px;}
+.activity-permalink #activity-stream > li .activity-content {padding-left:0px;}
+.activity-permalink #activity-stream .activity-comments > .ac-form {padding-left:0px;}
+
+/* New Post Comment Box Class */
+.dt-new-post-box {display:inline-block;width:100%;padding:10px;border:1px dashed #ccc;border-bottom:0px;background:white;}
+#activity-stream .activity-meta .dt-new-post-box:hover {background:white;color:#f70;}
+
+/* Updated Padding for Nested Comments */
+#activity-stream .activity-comments > .ac-form {padding-left:60px;}
+
+/* Single Shows - Audio Only Version */
+#dt-premium-user-audio {padding:5px;font-size:13px;color:#fdf382;text-decoration:none;font-weight:600;display:block;float:none;text-align:right;background:#0C1E41;padding-right:15px;line-height:19px;}
+#dt-premium-user-audio:hover {background:#71B8C4;color:#fff;}
+
+/* Reviews Archive Posters */
+.page-template-templatesarchive-reviews-php .main .dt-archive-thumb-small {width:auto;max-height:none;height:320px;}
+.dt-archive-review-meta {position:absolute;display:none;top:40%;width:100%;text-align:center;}
+.dt-archive-review-meta .dt-archive-toasts, .dt-archive-review-meta .dt-archive-com-count, .dt-archive-review-meta .dt-archive-meta-rating {margin-left:0px;float:none;display:inline-block;margin-bottom:5px;}
+.dt-archive-review-meta .dt-archive-meta-rating {display: inline-block;background: #f70;padding:0px 7px 4px 7px;border-radius: 5px;margin-top:1px;}
+.review-archive .dt-archive-thumb-small:hover {background:black;}
+.review-archive .dt-archive-thumb-small:hover > img {opacity:.75;}
+.review-archive .dt-archive-thumb-small img {width:100%;}
+.dt-archive-thumb-small:hover .dt-archive-meta-rating img, .dt-archive-meta-rating img {width:auto !important;border-radius:0px !important;margin:0px !important;height:13px;border:0px !important;}
+.review-archive .dt-archive-thumb-small:hover img {border-radius:10px;border-bottom:0px;}
+
+/* RSS Feed Links */
+.dt-rss-feed {text-decoration:none;font-size:14px;color:#f70;display:inline-block;padding:15px;}
+.dt-rss-feed:before {vertical-align:bottom;margin-right:5px;font-family:'fontello';font-weight:100;content: '\e817';color:#f70;font-size:16px;}
+.dt-rss-feed:hover, .dt-rss-feed:hover:before {color:black;}
+
+/* Fix for News Posts - Leftover from Grid tryout */
+#news-posts-archive .post {min-height:0px;}
+.dt-news-info {color:black;border-radius:10px;background:white;padding:20px 20px 30px 20px;}
+.dt-news-info h2 a {text-decoration:none;font-size:18px;font-weight:700;color:#f70;margin:0px;display:inline-block;line-height:22px;}
+.dt-news-info h2 a:hover {color:black;}
+
+/* Shows Archive - New Format */
+.dt-post-thumb {position:relative;}
+.main .dt-archive-thumb-small {background:none;max-height:none;height:auto;text-decoration:none;border-radius:10px 10px 0px 0px;}
+.main.review-archive .dt-archive-thumb-small, .post-type-archive-dt-audio .dt-archive-thumb-small {border-radius:10px;}
+.main .dt-archive-thumb-small:hover img {border-radius:10px 10px 0px 0px;border-bottom:5px solid #f70;}
+.main .dt-archive-thumb-small img {border-bottom:5px solid transparent;}
+.main .show-more-wrap p {font-size:13px;font-weight:400;top:0px;margin:0px;}
+.main .archive-posts .post p:last-child {top:0px;}
+.main .dt-archive-thumb-small img {opacity:1;}
+.archive .main .post .dt-post-info {line-height:20px;position:relative;padding:20px 0px;color:black;padding-top:10px;}
+.archive .main .post .dt-post-info a {color:black;}
+.main .dt-archive-thumb-small:hover .dt-post-info span, .main .archive-posts .dt-post-info a:hover {color:#f70;}
+
+/* Featued Drop Down */
+.dt-featured {text-align:center;}
+.dt-featured .dt-post-info {padding:10px 15px;}
+.dt-featured .dt-archive-thumb-small {text-decoration:none;}
+
+/* Shows Archive Post Meta */
+.dt-post-meta {position:absolute;bottom:0px;right:0px;padding:20px;}
+.dt-archive-toasts, .dt-archive-com-count {float:left;background:#f70;border-radius:5px;font-size:13px;color:white;margin-left:10px;padding:1px 5px;font-weight:100;}
+.dt-archive-toasts:before {font-family:fontello;content:'\e810';font-size:16px;vertical-align:bottom;font-weight:100;margin-right:5px;}
+.dt-archive-com-count:before {font-family:fontello;content:'\e80e';font-size:16px;vertical-align:bottom;font-weight:100;position:relative;top:1px;margin-right:5px;}
+
+/* Show Individual Page Meta */
+.dt-post-meta-single {position:static;float:left;padding:5px 0px;}
+.dt-post-meta-single .dt-archive-toasts {margin-left:0px;}
+.dt-post-meta-single .dt-archive-toasts, .dt-media-postinfo .dt-archive-com-count {padding:0px 10px;}
+
+.dt-post-meta-single.meta-news {width:auto;padding:0px;margin:5px;float:right;}
+.dt-post-meta-single.meta-news .dt-archive-toasts, .dt-post-meta-single.meta-news .dt-archive-com-count {padding:0px;background:white;color:#808080;line-height:18px;}
+
+/* Archive Post Filter Style */
+#dt-posts-order-by, #dt-posts-series-order-by {max-width:150px;background-image:url(images/dt-drops.png);float:right;margin:12px;margin-right:0px;background-color:white;background-position:100% 50%;padding-right:35px !important;background-repeat:no-repeat;line-height:15px;font-size:13px;color:#808080;box-shadow:none;border:1px solid #ccc;height:auto !important;padding:7px;outline:none;}
+#dt-posts-order-by:hover, #dt-posts-series-order-by:hover {background:white;background-image:url(images/dt-drops.png);background-repeat:no-repeat;background-position:100% 50%;}
+#dt-posts-order-by.active, #dt-posts-series-order-by.active {background-image:url(images/animate-filter-load.gif);}
+#dt-posts-series-order-by {max-width:240px;}
+.review-archive #dt-posts-order-by {margin:4px;}
+select::-ms-expand {display: none;} /* IE Fix for drop-down arrow */
+select {-moz-appearance: none;text-indent: 1px;text-overflow: '';} /* Firefox Fix for drop-down arrow */
+
+/* AJAX Page Search */
+#dt-posts-custom-search input {margin:12px 0px 12px 15px;}
+.review-archive #dt-posts-custom-search input {margin:2px;}
+#dt-posts-custom-search.active input {background-image:url(images/animate-load-trans.gif);background-repeat:no-repeat;background-position:98% 50%;}
+#dt-posts-custom-search input {max-width:148px;float:right;line-height:18px;box-shadow:none;font-size:13px;border:1px solid #ccc;height:auto !important;padding:6px 35px 5px 7px;outline:none;}
+#dt-posts-custom-search input::-webkit-input-placeholder, #dt-posts-custom-search input:-moz-placeholder, #dt-posts-custom-search input::-moz-placeholder, #dt-posts-custom-search input:-ms-input-placeholder { line-height:15px;}
+
+/* Fix Layout on Create Groups Page */
+.group-create #invite-list li {width:auto !important;}
+#group-create-tabs {overflow:hidden;}
+#group-create-tabs ul li:first-child {padding-left:0px;}
+
+/* Single Groups Page */
+.single-item.group-home #item-body #subnav.item-list-tabs {position:static;}
+
+/* News Post w/ Image */
+.has-news-thumb .dt-news-info {border-radius:0px 0px 10px 10px;}
+.archive .post.has-news-thumb img {border-radius:10px 10px 0px 0px;}
+
+/* Membership Page Update to 5 Column Grid */
+#dt-5-grid .dt-plan {float:left;width:18%;margin:0px 1%;}
+#dt-5-grid .dt-plan-pricing {margin:0px;min-height:420px;position:relative;}
+#dt-5-grid p, #dt-5-grid li {line-height:20px;}
+#dt-5-grid ul {padding-left:20px;}
+#dt-5-grid .dt-plan-pricing h2 {font-size:22px !important;padding-bottom:0px;padding-top:10px;}
+#dt-5-grid .dt-plan-pricing h3 {font-size:18px;}
+#dt-5-grid .dt-plan-select {position:absolute;margin:0px;width:100%;margin-left:-20px;bottom:30px;}
+
+/* Shows Rating System */
+#dt-review-meta {width:20%;float:left;margin-top:50px;}
+#dt-review-meta h3 {color:#71B8C4;font-weight:600;font-size:16px;margin-bottom:5px;}
+#dt-review-meta p {color:#fdeb72;}
+#dt-review-meta img {margin-bottom:0px;}
+#dt-review-content {width:80%;padding-right:40px;float:left;}
+#dt-review-content h3 {color:#71B8C5;font-size:16px;line-height:20px;margin-top:9px;}
+.rating-term {color:#fdeb72;margin:3px 0px;}
+
+/* Fixes Huge Margin underneath Single Page Slider */
+#dt-single-slider {margin-bottom:0px;}
+dt-single-slider a {text-decoration:none;}
+#dt-single-slider .owl-item a:hover img {opacity:1;}
+
+/* New Group List */
+.group-list-top {width:100%;overflow:hidden;padding-bottom:10px;margin-bottom:0px;border-bottom:1px dashed #ccc;}
+.group-list-top .dt-usr-btn {margin-top:4px;}
+.dt-new-group-list-switch #pag-top {margin-bottom:0px;}
+
+.dt-group-switch {text-decoration:none;padding:14px 5px;display:inline-block;}
+.dt-group-switch:hover, .dt-group-switch.active {color:#f70;}
+
+.directory .pagination-links span, .directory .pagination-links a {display:inline-block;padding:14px 0px;margin-right:10px;margin-bottom:0px;}
+
+/* New Group List View */
+.dt-new-group-list-switch #groups-list {padding-top:20px;}
+.dt-new-group-list-switch.active #groups-list .group-dir-entry:first-child {padding-top:0px;}
+.dt-new-group-list-switch.active #groups-list .size-1of4, dt-new-group-list-switch.active #groups-list .size-1of3, dt-new-group-list-switch.active #groups-list .size-1of2 {width:100%;}
+.dt-new-group-list-switch.active .group-dir-entry {background:none;width:100%;padding:15px 15px 25px 15px;margin-bottom:10px;border-bottom:1px dashed #ccc;padding-top:;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item {margin:0px;min-height:0px;background:none;padding:0px;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .member-photo {float:left;width:auto;clear:none;padding:0px;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .item {clear:none;text-align:left;padding:0px;padding-left:100px;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .item-title a {font-size:24px;font-weight:600;line-height:20px;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .item-desc {display:block !important;text-align:left;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .item-desc p {margin:0px;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .item-meta {float:left;display:inline;margin:0px;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .action {margin-top:0px !important;float:left;display:inline;margin:0px;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .meta {float:left;font-size:13px;margin:0px;line-height:20px;color:#72B5C0;font-weight:400;text-decoration:none;padding:0px 5px;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .group-button {float:left;margin:0px;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .group-button a, #item-header .dt-new-group-list-switch.active a.group-button {background:none;text-transform:none;line-height:20px;margin:0px;font-size:13px;color:#72B5C0 !important;font-weight:400;text-decoration:none;padding:0px 5px;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .group-button a:hover {color:#f70 !important;opacity:1;}
+.dt-new-group-list-switch.active .group-dir-entry .member-item .activity {line-height:20px;margin:0px;font-size:13px;color:#72B5C0;font-weight:400;text-decoration:none;padding:0px 5px 0px 0px;}
+
+/* New Group View Changes to existing view */
+.dt-new-group-list-switch #groups_search {margin:0px;}
+.dt-new-group-list-switch .group-list-subnav #subnav {padding-top:10px;}
+.bp-user.groups #subnav > ul {display:none;}
+.bp-user.groups .page-numbers {margin-right:10px;}
+.groups .action {margin-top:20px;}
+.pagination#pag-top {margin-left:25px;}
+.directory.groups #groups-dir-list .page-numbers {right:0px;}
+.user-grp-invite a {font-size:13px;font-weight:400;text-decoration:none;padding:5px 10px;display:inline-block;}
+.user-grp-invite a:hover, .invites.mygroups .user-grp-invite a {color:#f70;}
+
+/* Masonry Grid Layout for Groups */
+.group-dir-entry .member-item {min-height:0px;}
+#groups-list[data-columns]::before {content: '4 .column.size-1of4';}
+.dt-make-grid[data-columns]::before {content: '3 .column.size-1of3';}
+.dt-make-grid[data-columns]::before, #groups-list[data-columns]::before {visibility:hidden;}
+
+/* These are the classes that are going to be applied: */
+.size-1of4 { width: 25%;padding:0px;}
+.size-1of3 { width: 33.33333%;padding:0px;}
+.size-1of2 { width: 50%; padding:0px;}
+.size-1of1 { width: 100%; padding:0px;}
+
+/* Group Invites */
+#group-list.invites {list-style:none;margin-top:30px;}
+#group-list.invites li {margin-bottom:20px;}
+#group-list.invites .item-avatar {float:left;}
+
+/* Member Profile Friends Fix */
+.members.groups .friendship-button:hover {background:none !important;}
+
+/* Mobile Menu Drop-downs */
+#mobile-menu .menu-item-has-children ul {display:none;}
+#mobile-menu .menu-item-has-children ul.active {display:block;}
+
+/* Changes To All-Shows Page */
+.page-template-templatespage-all-shows-php .dt-archive-thumb-small img {opacity:1;border-bottom:0px;}
+.page-template-templatespage-all-shows-php .dt-archive-thumb-small:hover img {border-bottom:0px;}
+
+/* BP Notification alignment issue */
+.bp-template-notice p {text-align:center;}
+
+/* Added Padding for new Alignment */
+.bp-user.activity #whats-new-form-home {margin:0px;}
+.bp-user.forums #item-body, .bp-user.articles #subnav {padding:0px 0.9375em;}
+.bp-user.media #item-body, .bp-user.articles #articles-dir-list {padding-top:0px;}
+
+/* Forums */
+.bbp-breadcrumb {margin-right:10px;}
+.forum-archive .bbp-forum-info .bbp-forum a {text-decoration:none;font-size:12px;line-height:18px;}
+.forum-archive .bbp-forum-info .bbp-forum a:hover {color:#f70;text-decoration:underline;}
+.forum-archive .bbp-forum-info .bbp-forum {font-size:12px;line-height:18px;}
+.forum-archive .bbp-forum-info .bbp-forums-list {line-height:18px;}
+
+/* Fixes to padding on Articles */
+#articles-container h3 {padding-top:15px;}
+
+/* Removed Updated Activity Notice in Activity Directory */
+.directory.activity .bp-template-notice.updated {display:none !important;}
+
+/* Animated Scrolling */
+.animate-post {-webkit-transition-timing-function: ease-out; transition-timing-function: ease-out;-moz-transition-timing-function: ease-out;-ie-transition-timing-function: ease-out;-o-transition-timing-function: ease-out;position:relative;top:50px;opacity:0;transition:top 0.5s,opacity 0.5s;-webkit-transition:top 0.5s,opacity 0.5s;-moz-transition:top 0.5s,opacity 0.5s;-ie-transition:top 0.5s,opacity 0.5s;-o-transition:top 0.5s,opacity 0.5s;}
+.animate-post.visible {top:0px;opacity:1;}
+
+/* Load-More & Spin Wheel */
+.load-more {text-align:center;}
+.load-more a {background:#f70;width:auto;display:inline-block;padding:5px 20px;border-radius:5px;font-size:13px;text-transform:uppercase;}
+.load-more img {display:none;margin:0px;margin-top:10px;}
+.load-more.loading a {display:none;}
+.load-more.loading img {display:block;margin:auto;text-align:center;}
+
+/* Members Directory Header */
+.directory.members #search-members-form {margin-left:15px;}
+.directory.members #members-directory-form {margin-left:5px;}
+.directory.members #members-personal {line-height:30px;}
+.directory.members #members-personal a {color:#808080;font-size:13px;text-decoration:none;}
+.directory.members #members-personal a span {background: #808080;color: white;border-radius: 5px;padding: 3px;font-size: 12px;font-weight: 400;}
+
+/* Community Homepage */
+.community-home {line-height:20px;}
+.community-home h3 {margin-bottom:0px;padding-bottom:20px;border-bottom:1px dashed #ccc;margin-top:50px;}
+.community-home h3.first-title {margin-top:0px;}
+.community-home .activity-comments > ul {padding-top:0px;}
+.community-home #activity-stream > li:last-child, .community-home #members-list > .member-item:last-child, .community-home #groups-list > .group-dir-entry:last-child .member-item {border-bottom:0px;}
+.community-home .member-item {background:transparent;margin-bottom:10px;border-bottom:1px dashed #ccc;padding:20px 0px;}
+.community-home .activity-comments ul > li:first-child {padding-top:0px;border:0px !important;}
+.community-home .activity-comments ul > li:first-child a {font-size:13px;color:#F77A00;}
+.community-home .member-info p {margin:0px !important;}
+.community-home .activity {font-size:13px;line-height:20px;}
+.community-home .group-inner-list .member-photo {width:auto;float:left;}
+.community-home .group-inner-list .member-photo img {background:white;}
+.community-home .group-inner-list .item {width:auto;padding:0px 0px 0px 60px;text-align:left;clear:none;}
+.community-home .group-inner-list .item-title a {text-transform:none;}
+.community-home .group-inner-list .member-photo img {width:50px;}
+.community-home .active-groups {margin-bottom:50px;}
+
+/* New Audio Archive Format */
+.new-audio-format .post .dt-post-info {padding-left:170px;padding-top:0px;color:black;position:relative;}
+.new-audio-format .post .dt-post-thumb {float:left;max-width:150px;}
+.new-audio-format .dt-archive-audio-player {display:none;}
+.new-audio-format .dt-archive-thumb-small {padding:20px;background:white;border:3px solid white;border-radius:10px;}
+.new-audio-format .dt-archive-thumb-small:hover {border:3px solid #F70;}
+.new-audio-format .dt-archive-thumb-small img {border:0px;}
+.new-audio-format .dt-archive-thumb-small:hover img {border:0px;border-radius:10px !important;}
+
+/* New Audio Archive Active State */
+.new-audio-format.main .active .dt-archive-audio-player {padding-bottom:20px;}
+.new-audio-format.main .active .dt-archive-thumb-small {border:3px solid grey;background-image:url(images/congruent_outline.png);background-size:contain;background-repeat:repeat-x;}
+.new-audio-format.main .active .dt-archive-thumb-small .dt-post-info, .new-audio-format.main .active .dt-archive-thumb-small:hover .dt-post-info span {color:white;}
+
+/* Fix Border on some rtMedia Thumbnails */
+#activity-stream ul > li.rtmedia-list-item.media-type-photo:first-child {border:0px;}
+.rtmedia-list-item.media-type-photo > p {display:none;}
+
+/* Donate Button in Header */
+.dt-donate-header{font-size:13px;text-decoration:none;color:#72B5C0;padding-right:15px}
+.dt-donate-header:hover{color:#008799}
+.dt-donate-mobile{display:none}
+
+/* PollDaddy Polls */
+#dt-window-wrap .PDS_Poll .pds-box {background:#008799;font-family:'Open Sans', Arial, sans-serif;border:0px;width:auto;max-width:300px;}
+#dt-window-wrap .PDS_Poll .pds-question-top {color:white;line-height:20px;font-size:16px;}
+#dt-window-wrap .PDS_Poll .pds-answer {border-top:1px dashed #FFF;border-bottom:1px dashed #FFF;}
+#dt-window-wrap .PDS_Poll .pds-answer label {color:white;line-height:20px;}
+#dt-window-wrap .PDS_Poll .pds-vote-button {color:white;background:#f70;font-family:'Open Sans', Arial, sans-serif;padding:5px 20px;border-radius:5px;border:0px;text-transform:uppercase;}
+#dt-window-wrap .PDS_Poll .pds-links a.pds-pd-link, #dt-window-wrap .PDS_Poll .pds-links-back a.pds-pd-link {display:none;}
+#dt-window-wrap .PDS_Poll .pds-links-back  {padding-top:0px;}
+#dt-window-wrap .PDS_Poll .pds-links {padding:0px;color:white;}
+#dt-window-wrap .PDS_Poll .pds-links a {color:white;font-family:OpenSans;}
+#dt-window-wrap .PDS_Poll .pds-votebutton-outer {text-align:center;}
+#dt-window-wrap .PDS_Poll .pds-vote-button:hover {border:0px;background:#72B5C0;}
+#dt-window-wrap .PDS_Poll .pds-vote {padding:14px 0px 0px;}
+#dt-window-wrap .PDS_Poll .pds-radiobutton {margin:0px;height:auto;}
+#dt-window-wrap .PDS_Poll .pds-return-poll {color:#fdf382;}
+#dt-window-wrap .PDS_Poll .pds-vote-button-load {padding:6px 25px;border-radius:5px;border:0px;}
+#dt-window-wrap .PDS_Poll .pds-input-label {width:230px !important;}
+#dt-window-wrap .PDS_Poll .pds-checkbox {background:none;}
+
+/* PollDaddy New Results Button */
+#refresh_all_results {color:#fdf382;background: #008799;border-radius: 5px;padding: 5px 10px;font-size: 13px;text-transform: uppercase;text-decoration: none;display: inline;}
+#refresh_all_results:hover {background:#71B8C4;}
+
+/* PollDaddy Results Area */
+#dt-window-wrap .PDS_Poll .pds-answer-feedback {border:0px;}
+#dt-window-wrap .PDS_Poll .pds-answer-feedback-bar {background:#71B8C4;}
+#dt-window-wrap .PDS_Poll .pds-comments {display:none;}
+#dt-window-wrap .PDS_Poll .pds-links-back a, #dt-window-wrap .PDS_Poll .pds-total-votes {color:#fdf382;}
+#dt-window-wrap .PDS_Poll .pds-feedback-result {float:left;clear:both;}
+
+/* PollDaddy Styling for "Other" answers */
+#dt-window-wrap .PDS_Poll {float:left;padding:0px 30px 0px 0px;margin:20px 0px;/* position:fixed;right:0px;top:100px;z-index:10000000; */}
+/* #dt-window-wrap .PDS_Poll .pds-other-label {padding-left:25px;} */
+#dt-window-wrap .PDS_Poll .pds-answer-other input {margin-left: 25px;box-shadow: none;border: 0px;padding: 10px;height: 30px;border-radius: 5px;margin-bottom:0px;}
+#dt-window-wrap .PDS_Poll .pds-answer-group .pds-other-label:first-child {padding-left:25px;}
+#dt-window-wrap .pds-answer-text a {display:none;} /* this hides the "view" that goes out to PollDaddy */
+
+/* PollDaddy WP-Admin - Removed a few things */
+.wp-admin #manage-polls #design, .wp-admin #manage-polls .answer-media-icons li, .wp-admin #manage-polls .answer-media-icons {display:none;}
+.wp-admin #manage-polls .answer-media-icons li:last-child {display:block;}
+
+/* PollDaddy Ratings */
+.pd-rating {padding-top:5px;}
+.pd-rating .rating-msg {font-size:13px !important;line-height:22px !important;color:#f70 !important;font-weight:700 !important;}
+.pd-rating div[id^="rating_info_"] {display:none !important;} /* this is an ad for polldaddy, removed */
+.pd-rating > span {line-height:20px;}
+.dt-media-postinfo .pd-rating .rating-msg {color:white !important;}
+
+/* Specific Style for Reviews Page */
+.page-template-templatesarchive-reviews-php .pd-rating .rating-msg {font-size:10px !important;}
+.page-template-templatesarchive-reviews-php .pd-rating {padding-top:10px;}
+.page-template-templatesarchive-reviews-php .pds-rate-wrap {height:50px;overflow:hidden;width:100%;}
+.page-template-templatesarchive-reviews-php .post {margin-bottom:10px;}
+
+/* Adjustments to single show page */
+.dt-single-show-desc {clear:both;overflow:hidden;}
+.dt-single-show-desc p:first-child {margin-top:6px;}
+.dt-media .post-content .single-show .post-title {margin-top:20px;}
+#dt-review-content h3 {padding-bottom:9px !important;}
+
+/* Safari Fix: 2nd Header Nav was not clearing the top menu */
+.dt-account-links {height:36px !important;}
+
+/* Somehow lost the left alignment on these */
+.header .dt-featured, .dt-featured .dt-post-info {text-align:left;}
+
+/* Styling for new ads */
+.header .dt-featured .textwidget {text-align:center;padding:40px 0px 10px 0px;}
+.main .content#dt-side-comments {padding-top:30px;}
+.main .content.ad-above-comments {overflow:hidden;clear:both;padding:60px 15px 0px 15px;}
+
+/* Featured Carousel in top Nav */
+#feature-this-carousel .dt-archive-thumb-small {max-height:150px;}
+#feature-this-carousel .dt-archive-thumb-small img {width:100%;}
+#feature-this-carousel .owl-controls {margin-top: 0px;top: -45px;position: absolute;right: 10px;}
+#feature-this-carousel .owl-buttons {float:right;}
+#feature-this-carousel .owl-prev, #feature-this-carousel .owl-next {opacity:1;border-radius:5px;background:#f70;}
+#feature-this-carousel .owl-prev:active, #feature-this-carousel .owl-next:active {position:relative;top:2px;}
+
+/* Activity Feed - Image Formatting for user html img */
+/*.activity-item li:not(.media-type-photo) img, .activity-item div:not(.rtmedia-item-thumbnail) img, .activity-item div:not(.activity-avatar) img {margin:10px 0px;max-height:500px !important;}*/
+.activity-item li:not(.media-type-photo) div:not(.rtmedia-item-thumbnail) .activity-inner img {margin:10px 0px;max-height:500px !important;}
+
+/* New "News Feed" page - formerly the sitewide activity page */
+.news-feed-sidebar {overflow:hidden;}
+.news-feed-sidebar .member-item {background:none;padding:0px;margin-bottom:10px;}
+.news-feed-sidebar .member-photo {float:left;width:auto;max-width:30px;}
+.news-feed-sidebar .member-info {padding-left:40px;}
+.news-feed-sidebar .member-info a, .news-feed-sidebar .item-title a {text-transform:none;color:black;font-size:14px;}
+.news-feed-sidebar .member-info a:hover, .news-feed-sidebar .item-title a:hover {color:#F70;}
+.news-feed-sidebar .member-info .activity, .news-feed-sidebar .item-meta {display:none;}
+.news-feed-sidebar .member-photo img {border-radius:5px;}
+.news-feed-sidebar .item {padding:0px;padding-left:40px;width:auto;clear:none;text-align:left;text-transform:none;}
+.news-feed-sidebar h3 {font-size:18px;margin:20px 0px;clear:both;padding-top:20px;border-top:1px dashed #ccc;}
+
+.news-feed-user {overflow:hidden;margin-bottom:25px;}
+.news-feed-user a {text-decoration:none;}
+.news-feed-user .edit-usr {display:inline-block;font-size:12px;text-decoration:none;width:100%;}
+.news-feed-user .news-usr-img {}
+.news-feed-user img {max-width:70px;border-radius:5px;margin:0px;float:left;}
+#buddypress .news-feed-user .news-feed-uname {padding-left:80px;font-weight:700;}
+
+.news-feed-sidebar .active-members {margin-bottom:25px;}
+
+/* New User Profile Page - Header style changes for background image */
+.bp-user .dt-usr-cover-overlay {width:100%;height:100%;position:absolute;opacity:.15;background:black;top:0;left:0;}
+.bp-user .user-profile-header {position:relative;}
+.bp-user #item-header {overflow:hidden;padding:30px;background:linear-gradient(#0C1E41,#008799);position:relative;}
+.bp-user .usr-profile-header {margin:0px;padding:0px;}
+.bp-user #item-header-avatar {float:left;margin-right:20px;}
+.bp-user #item-header-avatar img {margin-bottom:0px;}
+.buddypress .profile-cover-action {display:none;}
+
+/* Moved Delete Button to General Account Settings and made style tweaks to delete page */
+.button.delete-dt-account {margin-bottom: 20px;border-radius: 5px;padding: 10px 15px;background-color: red;}
+.button.delete-dt-account:hover {opacity:.9;}
+#account-delete-form #delete-account-understand {float:left;margin-top:6px;margin-right:6px;}
+
+/* New Settings Nav in top of User Profile */
+.dt-member-edit-actions {overflow:hidden;width:100%;text-align:left;}
+.dt-member-edit-actions li {display:inline-block;}
+.dt-member-edit-actions ul li:first-child a {padding-left:0px;}
+.dt-member-edit-actions li a {display:block;text-decoration:none;font-size:12px;font-weight:600;padding:4px 8px;}
+.dt-member-edit-actions li a:hover {color:#f70;}
+
+/* Highlighting for new settings nav */
+.bp-user.change-avatar .dt-member-edit-actions .change-avatar, .bp-user.notifications .dt-member-edit-actions .notifications, .bp-user.general .dt-member-edit-actions .general, .bp-user.edit .dt-member-edit-actions .edit, .bp-user.change-cover .dt-member-edit-actions .change-cover {color:#f70;}
+
+/* Hide sub-menu on settings/profile and make width readable */
+.bp-user.settings .profile-subn ul, .bp-user.my-profile .profile-subn ul {display:none;}
+.bp-user.settings #item-body, .bp-user.my-profile #item-body {max-width:720px;}
+
+.bp-user #item-header .dt-member-info {margin-top:70px;}
+.bp-user #item-header .dt-user-names {padding-top:20px;}
+.bp-user #item-header .dt-user-names p {color:white;text-shadow:2px 2px 0 #000;margin:0px;}
+.bp-user #item-header .dt-user-names .user-nicename {font-weight:700;color:white;font-size:26px;text-shadow:2px 2px 0 #000;}
+.bp-user #item-header .dt-user-names .user-nicename > span {display:inline-block;margin-top:6px;color:white;text-shadow:2px 2px 0 #000;font-size:17px;font-weight:400;}
+.usr-profile-header a.friendship-button:hover {opacity:1 !important;background-color:rgba(83, 128, 136, .8);}
+
+#buddypress .dt-user-side-box {overflow:hidden;background:white;border-radius:10px;padding:20px;margin-bottom:20px;}
+#buddypress .dt-user-side-box p {margin:0px 0px 10px 0px;}
+#buddypress .dt-user-side-box p:last-child {margin:0px;}
+
+.dt-user-side-box .user-profile-photo {float:left;margin-right:10px;margin-bottom:10px;max-width:120px;}
+.dt-user-side-box .user-profile-photo img {border-radius:10px;margin-bottom:0px;}
+
+.dt-side-faves h4 {margin-bottom:5px;}
+
+/* Changes to existing styles */
+.bp-user #buddypress {overflow:hidden;margin-bottom:50px;}
+.usr-profile-header a.friendship-button:hover {opacity:1 !important;background-color:rgba(255, 119, 0, 0.9) !important;}
+.bp-user .dt-usr-btn, .bp-user .dt-usr-btn.dt-btn-dkblue, .bp-user .usr-profile-header .generic-button {margin-left:10px;}
+.dt-usr-btn.dt-btn-dkblue:hover {opacity:1 !important;background-color:rgba(83, 128, 136, 0.9) !important;}
+#user-nav li a {font-size:15px;padding:10px 15px;}
+#user-nav li:first-child a {padding:10px 15px 10px 0px;}
+.bp-user.activity #whats-new-form-home {border-top:1px dashed #CCC;margin-bottom:10px;}
+.bp-user .item-list-tabs.profile-subn {padding-bottom:10px !important;}
+.mfp-content #rtmedia-single-media-container .rtmedia-media {background-color:#000!important;}
+div.mfp-bg {opacity:.95 !important;}
+#activity-filter-by.active {background-image:url(images/animate-filter-load.gif);}
+
+/* Changes to existing profile sub-nav */
+.bp-user.forums #subnav li a, .profile-subn#subnav a, .my-account.articles #subnav a, .bp-user .rtmedia-action-buttons, .bp-user .rt-media-subnav > span, #rtm-media-options span {font-size:14px !important;font-weight:600 !important;padding:14px;}
+.bp-user #subnav ul li:first-child a {padding-left:0px;}
+#rtm-media-options span {padding:14px 10px;}
+.bp-user.media .profile-subn#subnav li {float:left;}
+.bp-user #rtm-media-options .click-nav {padding:14px 0px;margin:0px;}
+.rt-media-subnav .click-nav {padding:14px;}
+.bp-user .dt-group-switch {padding:14px 5px;}
+.bp-user .dt-new-group-list-switch #pag-top {padding:14px 0px;}
+.bp-user #groups_search {line-height:32px;height:32px !important;}
+.bp-user .user-grp-invite a {padding:6px 10px;}
+.bp-user .profile-subn#subnav li {float:right;}
+.bp-user.messages .profile-subn#subnav li {float:left;}
+.bp-user .profile-subn#subnav li a {font-size:14px;font-weight:600;padding:14px;}
+.bp-user .profile-subn#subnav #friends-my-friends-personal-li a {padding-right:0px;}
+.bp-user .profile-subn#subnav .filter {float:left;margin-top:10px;}
+
+.bp-user .rtmedia-item-title {display:none;}
+.bp-user.articles #buddypress {margin-bottom:0px;}
+.bp-user.articles #item-body > h3 {display:none;}
+.bp-user.articles #articles-dir-list section > h3 {padding-top:25px;}
+.bp-user.my-account.articles #articles-dir-list section > h3 {padding-top:5px;}
+.bp-user.media .item-list-tabs.profile-subn {padding-bottom:0px !important;}
+.bp-user.media #rtm-gallery-title-container .rtm-gallery-title {line-height:38px;}
+
+/* Articles/Shows */
+.dt-user-side-box h4.user-side-title {margin-bottom:10px;}
+.dt-side-articles p a {font-weight:400;text-decoration:none;}
+.dt-side-articles h4 a {text-decoration:none;}
+.dt-side-articles a:hover {color:#f70;}
+
+.bp-user.activity #activity-stream > li:first-child {padding-top:0px;}
+.bp-user.my-activity #activity-stream > li:first-child {padding-top:10px;}
+
+/* Cover Photo Change */
+.bp-user.change-cover h3 {padding-top:10px;padding-bottom:10px;clear:both;}
+#bpcp_change {max-width:700px;}
+#bpcp_change .current-cover img {margin-bottom:0px;}
+#bpcp_change .radio {max-width:100px;}
+#bpcp_change .radio input {margin:4px 0px 0px 0px;}
+#bpcp_change #bg-delete-wrapper {margin-bottom:30px;}
+#bpcp_change h3 {font-size:16px;padding-top:20px;clear:both;}
+
+/* Some fixes found while coding profile v3.0 */
+.bp-user.notifications .pagination#pag-top {margin-left:0px;}
+.main-sub-nav .dt-header-user.with-icon:before {font-size:16px;position:relative;top:-1px;}
+.buddypress.groups #group-script-side {overflow;hidden;}
+
+/* Added home icon to header nav (need to recompile fontello library) */
+@font-face {
+  font-family: 'dt-home';
+  src: url('modules/fonts/dt-home.eot?16147274');
+  src: url('modules/fonts/dt-home.eot?16147274#iefix') format('embedded-opentype'),
+       url('modules/fonts/dt-home.woff?16147274') format('woff'),
+       url('modules/fonts/dt-home.ttf?16147274') format('truetype'),
+       url('modules/fonts/dt-home.svg?16147274#dt-home') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#dt-usr-settings:before { content: '\e800'; font-family: 'dt-home'; }
+
+@media (min-width: 1025px) {
+	/* New Group Masonry - Used to scale back to 4 */
+	#groups-list[data-columns]::before {content: '4 .column.size-1of4';}
+	.dt-make-grid[data-columns]::before {content: '3 .column.size-1of3';}
+	.dt-account-links a {margin:0px 5px !important;}
+	
+}
+
+@media (max-width: 1024px) {
+	/* Audio Page Filters */
+	.new-audio-format #dt-posts-order-by {max-width:110px;}
+	.new-audio-format #dt-posts-series-order-by {max-width:145px;}
+	.new-audio-format #dt-posts-custom-search input {max-width:98px;}
+	
+	/* All Page Filters */
+	#dt-posts-order-by {max-width:100px;}
+	#dt-posts-custom-search input {max-width:98px;}
+
+	#articles-container {min-width:0px;}
+
+	/* Make DT Account Icons Bigger */
+	.main-sub-nav .dt-header-user.with-icon:before {font-size:26px;top:0px;margin-right:2px;}
+	#dt-usr-profile:before {margin-right:0px;}
+	.logged-in .main-sub-nav {height:45px;}
+	.logged-in .content.main-sub-nav p {padding-top:5px;overflow:initial;}
+	
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+
+	/* New Group Masonry */
+	#groups-list[data-columns]::before {content: '3 .column.size-1of3';}
+	.dt-make-grid[data-columns]::before {content: '2 .column.size-1of2';}
+
+	.page-template-templatesarchive-reviews-php .dt-archive-thumb-small {width:100%;max-height:none;height:auto;}
+
+	.page-id-81 .dt-plan-pricing h2 {font-size:24px !important;}
+	#dt-5-grid .dt-plan {width:45%;margin:0px 2.5%;}
+	#dt-5-grid .dt-plan.med-row-2 {width:29%;margin:20px 2%;}
+	#dt-5-grid .dt-plan.med-row-2.med-row-first {clear:both;}
+	#dt-5-grid .dt-plan-pricing {min-height:300px;}
+	#dt-5-grid .dt-plan-select {position:relative;margin-left:0px;bottom:0px;}
+	#dt-5-grid .med-row-2 .dt-plan-select {position:absolute;margin:0px;width:100%;margin-left:-20px;bottom:30px;}
+	#dt-5-grid .med-row-2 .dt-plan-pricing {min-height:380px;}
+	
+	/* Fixes Padding Issue where header padding is greater than body content on Community Homepage */
+	.community-home .content > .content {padding:0px !important;}
+
+}
+
+@media (max-width:900px) {
+
+	/* Group List View */
+	.group-list-right-nav, .dt-group-list-view {float:left;}
+	.bp-user .group-list-right-nav, .bp-user .dt-group-list-view {float:right;}
+	
+}
+
+@media (max-width:767px) {
+
+	/* Audio Page Filters */
+	.new-audio-format .dt-crumbs {margin-bottom:0px;}
+	.dt-audio-filter-feeds {width:100%;}
+	.new-audio-format .dt-audio-filter-feeds select, .new-audio-format .dt-audio-filter-feeds form, .new-audio-format .dt-audio-filter-feeds .dt-rss-feed, #dt-posts-order-by, #dt-posts-series-order-by {float:left;}
+	.new-audio-format #dt-posts-custom-search input {margin:12px 10px 0px 0px;}
+	.new-audio-format #dt-posts-order-by {margin-left:0px;}
+	
+	/* All Page Filters */
+	#dt-filter-search {width:100%;}
+	.archive .dt-crumbs {margin-bottom:0px;}
+	#dt-posts-custom-search input {margin-left:0px;margin-right:0px;}
+	#dt-posts-order-by, #dt-posts-custom-search, .dt-rss-feed {float:left;}
+	
+	/* Fixed Float issue with donate/login */
+	.dt-account-links a {float:left;}
+	.dt-account-links {min-width:100px;}
+
+	/* New Profile Media Pages */
+	.bp-user #rtm-media-options {width:100%;float:none;margin-bottom:10px;clear:both;}
+	.bp-user #rtm-media-options .click-nav {padding:5px 0px;}
+	.bp-user #rtm-media-options .js, .bp-user #rtm-media-options .rtmedia-action-buttons {padding-left:0px;}
+	.bp-user #rtm-media-sort-list ul {left:0px;}
+	.bp-user #rtm-media-options ul:before, .bp-user .rtm-lightbox-container #rtm-media-options-list ul:before{left:23px;right:0;}
+	.bp-user #rtm-media-options ul {right:-90px;}
+	.bp-user #rtm-media-options .rtmedia-upload-media-link {float:left;padding:4px 15px;}
+
+}
+
+@media (min-width: 481px) and (max-width:767px) {
+
+	/* New Group Masonry */
+	#groups-list[data-columns]::before {content: '2 .column.size-1of2';}
+	.dt-make-grid[data-columns]::before {content: '2 .column.size-1of2';}
+
+	#dt-5-grid .dt-plan {width:95%;margin:5%;}
+	#dt-5-grid .med-row-2 .dt-plan-pricing {min-height:none;}
+	#dt-5-grid .dt-plan-pricing {min-height:0px;}
+	#dt-5-grid .dt-plan.med-row-2 {width:95%;margin:5%;}
+	#dt-5-grid .med-row-2 .dt-plan-select {position:relative;margin-left:0px;bottom:0px;}
+	#dt-5-grid .med-row-2 .dt-plan-pricing {min-height:0px;}
+	
+	/* User Profile */
+	.usr-profile-header {margin-bottom:10px;padding:0px 1.875em;}
+	.usr-profile-header .friendship-button, .usr-profile-header .dt-usr-btn {margin-right:5px;}
+	
+	/* Group Directory Header */
+	.group-index-actions {float:left;}
+	.group-list-top h1 {width:100%;padding-bottom:5px;}
+	
+	/* Main Padding on All Pages */
+	.main > .content {padding-top:50px;}
+	
+	/* With Polls, background will run out */
+	.dt-media {background-size:cover !important;}
+	
+}
+
+@media (max-width:640px) {
+
+	/* Reviews Ratings */	
+	#dt-review-meta {width:100%;margin-top:15px;}
+	#dt-review-content {width:100%;margin-top:15px;}
+
+	/* Changes to Member Header */
+	.member-dir-headr-new #subnav {float:left;margin-top:5px;}
+	#members-personal {padding-left:0px;}
+	#members-dir-search, #members-directory-form, #members-personal {float:left;}
+	#members-personal {clear:both;}
+	#search-members-form {margin-left:0px !important;}
+	#members_search {margin-bottom:0px !important;}
+	
+
+	/* Add padding to top of Review Archive */
+	.review-archive .show-more-wrap {padding-top:30px;}
+	
+	/* Audio Page Filters */
+	.all-shows-archive .dt-rss-feed {padding:10px 0px;}
+	.directory.activity #activity-filter-by {margin-bottom:20px !important;}
+	.dt-audio-filter-feeds .dt-rss-feed {padding:2px 0px 10px 5px;}
+	#dt-posts-series-order-by {clear:left;margin-top:0px;margin-left:0px;margin-right:10px;}
+
+	.dt-donate-header{display:none}
+	.dt-donate-mobile{display:block}
+	
+	/* Move Community home Top Menu to left on mobile */
+	.community-user-action > div {float:left !important;margin-top:20px;}
+
+	/* News Page */
+	.news-feed-sidebar .news-feed-user {margin-bottom:0px;}
+	.news-feed-sidebar .member-photo {clear:both;max-width:100px;}
+	.news-feed-sidebar .member-info {display:none;}
+	#buddypress .news-feed-sidebar .news-feed-uname {clear:both;padding-left:0px;padding-top:10px;}
+	.news-feed-sidebar h3 {margin-top:10px;font-size:13px;}
+	.news-feed-sidebar .group-dir-entry .item {display:none;padding: 0px;width: 100%;clear: both;padding-top: 10px;padding-bottom: 10px;}
+	.news-feed-sidebar .member-photo img, .news-feed-sidebar .group-dir-entry .member-photo {max-width:50px;width:100%;}
+	.news-feed-sidebar .news-feed-user {display:none;}
+	.news-feed-sidebar .first-title {padding-top:0px;margin-top:0px;border-top:0px;}
+	.news-feed-pg h1 {margin-top:10px;}
+	.directory.activity .news-feed-pg #activity-filter-by {margin-bottom:0px !important;margin-top:10px !important;}
+
+	/* User Profiles v3.0 */
+	.dt-side-articles {display:none;}
+	.dt-usr-btn, .dt-usr-btn.dt-btn-dkblue, .usr-profile-header .generic-button {margin-left:0px !important;margin-right:10px;float:left;}
+	.dt-user-side-box .user-profile-photo {max-width:80px;}
+	.bp-user .dt-user-profile-actions {float:left;}
+	#user-nav li a {padding:10px 5px;font-size:14px;}
+	#user-nav li:first-child a {padding:10px 5px 10px 0px;font-size:14px;}
+	.bp-user #item-header {padding:15px;}
+	.bp-user .profile-subn#subnav li a {padding:10px;padding-left:0px;}
+
+	.dt-member-edit-actions li a {padding-left:0px;}
+	.dt-member-edit-actions {padding-bottom:10px;}
+
+	.bp-user .my_account_subscriptions {width:100%;font-size:12px;	}
+	.bp-user .my_account_subscriptions .order-number, .bp-user .my_account_subscriptions .subscription-next-payment, .bp-user .my_account_subscriptions .subscription-order-number {display:none;}
+
+	.bp-user .group-list-right-nav {width:100%;margin-top:5px;}
+	.bp-user .dt-new-group-list-switch #pag-top, .bp-user .dt-group-list-view {float:left;margin-left:5px;}
+
+	.article-metadata {width:100%;}
+
+
+}
+
+@media (max-width:480px) {
+
+	/* Reviews Archive height issue */
+	.page-template-templatesarchive-reviews-php .main .dt-archive-thumb-small {height:auto;}
+
+	/* New Group Masonry */
+	#groups-list[data-columns]::before {content: '1 .column.size-1of1';}
+	.dt-make-grid[data-columns]::before {content: '1 .column.size-1of1';}
+	.size-1of1 { width: 100%; }
+
+	#rtmedia-add-media-button-post-update {padding:23px 10px 0px 0px !important;}	
+	
+	/* Main Padding on All Pages */
+	.main > .content {padding-top:30px;}
+
+	/* Group Directory List/Grid */
+	#pag-top.first-group-pagination {float:left;width:100%;margin-left:0px;padding-bottom:0px !important;}
+	#pag-top.first-group-pagination .pagination-links {float:left;}
+	.dt-new-group-list-switch .pagination-links span, .dt-new-group-list-switch .pagination-links a {padding:10px 5px 0px 5px;margin:0px;}
+	#groups_search {max-width:100px;}
+	#groups-order-by {max-width:120px;}
+	
+	/* New Audio Archive Format */
+	.new-audio-format.main .post .dt-post-info {padding-left:0px;}
+	.new-audio-format.main .post .dt-post-thumb {float:none;margin-bottom:20px;}
+	
+	/* Audio Page Filters */
+	#dt-posts-series-order-by {margin-top:0px;float:left;margin-left:0px;}
+	
+}
